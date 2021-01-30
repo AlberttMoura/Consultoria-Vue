@@ -20,20 +20,20 @@ export default {
 
 <style>
 @font-face {
-    font-family: "Open Sans";
-    src: url("./assets/fonts/Open_Sans/OpenSans-Regular.ttf");
-  }
+        font-family: "OpenSans";
+        src: url("../src/assets/fonts/Open_Sans/OpenSans-Regular.ttf");
+      }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  color: #474747;
-  font-family: "Open Sans";
-}
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: #474747;
+        font-family: 'OpenSans';
+      }
 
 .app {
-  background-color: #f3f3f3;
+  background-color: #fff;
   height: auto;
   width: 100%;
   overflow: auto;

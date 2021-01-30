@@ -19,11 +19,7 @@ export default {
 }
 </script>
 
-<style>
-* {
-    color: #474747;
-    font-family:'Open Sans';
-}
+<style scoped>
 
 .navbar {
     background: #fff;
@@ -32,6 +28,7 @@ export default {
     height: 100%;
     align-items: center;
     grid-area: h;
+    position:relative;
 }
 
 .logo {
