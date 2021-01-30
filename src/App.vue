@@ -1,30 +1,47 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="app">
+    <Navbar/>
+    <router-view/>
+    <Footer/>
   </div>
-  <router-view/>
 </template>
 
+<script>
+import Navbar from './components/general/Navbar'
+import Footer from './components/general/Footer'
+
+export default {
+  components: {
+    Navbar,
+    Footer
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@font-face {
+    font-family: "Open Sans";
+    src: url("./assets/fonts/Open_Sans/OpenSans-Regular.ttf");
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #474747;
+  font-family: "Open Sans";
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.app {
+  background-color: #f3f3f3;
+  height: auto;
+  width: 100%;
+  overflow: auto;
+  display: grid;;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px auto 40px;
+  grid-template-areas: 'h h h h h'
+                       'p p p p p'
+                       'f f f f f';
 }
 </style>
