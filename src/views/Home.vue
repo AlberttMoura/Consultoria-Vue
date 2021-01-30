@@ -9,7 +9,7 @@
         <img class="comp-logo" src="@/assets/images/ursallogo.png" alt="">
         <img class="comp-logo" src="@/assets/images/umbrellalogo.png" alt="">
         <img class="comp-logo" src="@/assets/images/acmelogo.png" alt="">
-        <img class="comp-logo" src="@/assets/images/spongeboblogo.png" alt="">
+        <img class="comp-logo" src="@/assets/images/oxemudaslogo.jpg" alt="">
       </div>
     </div>
   </div>
