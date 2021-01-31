@@ -6,7 +6,7 @@
         </div>
         <div class="menu-links">
             <router-link to="/" class="menu-link">Início</router-link>
-            <router-link to="/" class="menu-link">Serviços</router-link>
+            <router-link to="/services" class="menu-link">Serviços</router-link>
             <router-link to="/" class="menu-link">Negócios</router-link>
             <router-link to="/about" class="menu-link">Quem Somos</router-link>
         </div>
@@ -32,7 +32,7 @@ export default {
 }
 
 .logo {
-    padding-left: 12px;
+    padding-left: max(12px, 3%);
     display: flex;
     align-items: center;
     border-bottom: #E8E8E8 1px solid;
@@ -43,7 +43,7 @@ export default {
     text-decoration: none;
     font-size: 24px;
     font-weight: 900;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .logo-image {
@@ -91,6 +91,12 @@ export default {
 
     .menu-links .menu-link {
         font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .logo {
+        padding-left: 6%;
     }
 }
 </style>
