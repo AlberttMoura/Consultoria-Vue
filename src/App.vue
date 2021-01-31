@@ -1,6 +1,8 @@
 <template>
   <div class="app">
-    <Navbar/>
+    <div class="top">
+      <Navbar/>
+    </div>
     <router-view/>
     <Footer/>
   </div>
@@ -36,12 +38,5 @@ export default {
   background-color: #fff;
   height: auto;
   width: 100%;
-  overflow: auto;
-  display: grid;;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 80px auto 40px;
-  grid-template-areas: 'h h h h h'
-                       'p p p p p'
-                       'f f f f f';
 }
 </style>

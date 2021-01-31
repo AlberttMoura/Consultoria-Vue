@@ -19,9 +19,9 @@ export default {
     width: 100%;
     height: 100%;
     bottom: 0;
+    height: 40px;
     margin-top: auto;
     clear: both;
-    grid-area: f;
     display: flex;
     align-items: center;
     justify-content: space-between;
